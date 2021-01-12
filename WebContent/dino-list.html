@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header>
+        <nav id ="navbar">
+            <div class="my-container">
+                <h1>The Little Dinos</h1>
+                <ul>
+                    <li><a href='/P0Server'>Home</a></li>
+                    <li><a href='/P0Server/loginPage'>Login</a></li>
+                    <li><a href='/P0Server/createUser'>Create Account</a></li>
+                    <li><a href='/P0Server/dino-list'>Dino List</a></li>
+                    <li><a href='/P0Server/Profile'>Profile</a></li>
+                    <li><a href='/P0Server/createDino'>Create Dino</a></li>
+                    <li><a href='/P0Server/logout'>logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div >
+        <section>
+              <input type="text" id='search'>
+            <input type="radio" id='period' name='Dino_Info'>
+            <label for="period">Period</label>
+            <input type="radio" id='name' name='Dino_Info'>
+            <label for='name'>Dinosaur Name</label>
+            <input type="radio" id='del' name='Dino_Info'>
+            <label for='del'>Delete</label>
+            <button id='searchIndex'>Search</button>
+            <h1>Dino List</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Dino Id</th>
+                        <th>Name</th>
+                        <th>Period</th>
+                        <th>Edits<th>
+                    </tr>
+                </thead>
+                <tbody id="Dinosaur-table-data">
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="/P0Server/js/dino-list"></script>
+</body>
+</html>

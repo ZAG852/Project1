@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    height: 100%;
+    background: rgb(161,144,55);
+background: linear-gradient(180deg, rgba(161,144,55,1) 0%, rgba(110,77,1,1) 100%) no-repeat ;
+
+}
+form{
+    background-color: rgba(94, 82, 63,1);
+    margin :auto;
+    margin-top: 40%;
+    max-height: 40%;
+    max-width:60%;
+    min-height: 100px;
+    min-width:300px;
+
+    
+}
+div#logBlock{
+    color: #cfb25b;
+}
+
+
