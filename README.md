@@ -1,7 +1,39 @@
 # ErikTerreriProject0
 Backend server for a Dinosaur cataloging service.
+# Project Description
+A cataloging service for dinosaurs.
 
-# API Use
+# Technologies Used
+- Apache Tomcat Server - version 9.0.46
+- PostgreSQL - version 12
+- Git
+- Amazon Web Services
+- jenkins
+- Java 8
+- Maven - 3.6.3
+
+# Getting Started
+- Pull the project from github
+- Make sure you have the proper tools installed like Maven and Apache Tomcat
+- Apache Tomcat Installation Instructions
+	- Go to this address and download the Tomcat Server ```https://tomcat.apache.org/download-90.cgi```
+	- Setup the CatalinaHome environment variable appropriately for your operating system environment.
+- Maven Installation Instructions
+	- Windows install maven through Chocolatey using the ```choco install maven``` command
+	- Otherwise follow the instructions at ```https://maven.apache.org/```
+	- Setup the M2 environment variable appropriately for your operating system environment.
+- Setup the postgres database with the data below
+- Set the following within the environment variables of your IDE or the environment variables of your OS:
+	- DB_URL to the correct database URL
+	- DB_USERNAME to the username of the database
+	- DB_PASSWORD to the password of the database
+
+
+
+# API Usage
+This is meant to be used in such a way for a forum of users to 
+put a bunch together a bunch of different dinosaurs and then manage those dinosaurs. You can see which user posts what dinosaur. As an admin
+you will eventually be able to manage the users within the application as well. The following are the URI calls that can be used with this API:
 
 ## GET /dino
 Gets a list of all Dinosaurs.
@@ -72,6 +104,6 @@ create table Dinosaurs(
 );
 ```
 
-# Contributions
-Api was written by Erik Terreri.
-The Server-Side rendered frontend was written by Zachary Garner
+# Contributors
+- The API was written by Erik Terreri.
+- The Server-Side Rendered frontend was written by Zachary Garner
