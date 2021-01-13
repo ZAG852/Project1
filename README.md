@@ -11,6 +11,9 @@ A cataloging service for dinosaurs.
 - jenkins
 - Java 8
 - Maven - 3.6.3
+- HTML
+- CSS
+- JavaScript
 
 # Getting Started
 - Pull the project from github
@@ -22,11 +25,12 @@ A cataloging service for dinosaurs.
 	- Windows install maven through Chocolatey using the ```choco install maven``` command
 	- Otherwise follow the instructions at ```https://maven.apache.org/```
 	- Setup the M2 environment variable appropriately for your operating system environment.
-- Setup the postgres database with the data below
+- Setup the postgres database with the data below in the Database Setup section
 - Set the following within the environment variables of your IDE or the environment variables of your OS:
 	- DB_URL to the correct database URL
 	- DB_USERNAME to the username of the database
 	- DB_PASSWORD to the password of the database
+
 
 
 
@@ -81,7 +85,7 @@ Updates currently logged in user to a given name in html form data
 ## DELETE /login
 Deletes currently logged in user
 
-# Setup
+# Database Setup
 ```sql
 drop table if exists Users CASCADE;
 create table Users(
